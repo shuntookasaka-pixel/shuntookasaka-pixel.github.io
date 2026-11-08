@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>shuntookasaka-pixelの部屋</title>
+    <!-- CSSファイルを読み込む -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #0f141c; color: #e3e6eb; font-family: 'Segoe UI', sans-serif; padding: 40px;">
+<body>
     
     <h1 style="color: #4ba3ff; text-align: center; font-size: 3rem; margin-bottom: 10px;">shuntookasaka-pixelの部屋</h1>
-    <h2 style="text-align: left;">自己紹介</h2>
-    <p style="text-align: left;">私は小学生で、なんかいろいろプログラミングなどします。</br>そしてしたに作ったアプリなどを公開します。</br>えーよろしくお願いいたします
-    </p>
-    <p style="text-align: left; color: gray; font-family: 'Segoe UI', sans-serif;">挨拶苦手すぎる</p>
+    
+    <h2>自己紹介</h2>
+    <p>私は小学生で、なんかいろいろプログラミングなどします。<br>そしてしたに作ったアプリなどを公開します。<br>えーよろしくお願いいたします。</p>
+    <p style="color: gray; font-family: 'Segoe UI', sans-serif;">挨拶苦手すぎる</p>
 
-    <p style="margin-top: 50px; font-size: 0.9rem; color: #8b949e;">Powered by GitHub Pages</p>
+    <!-- カードセクション -->
+    <div class="card-container">
+        <div class="card">
+            <p>作ったものなどはこちら</p>
+            <!-- value="クリック" に修正し、後でクリックできるように id を追加 -->
+            <input type="button" value="クリック" id="btn-projects"/>
+        </div>
+
+        <div class="card">
+            <p>その他ブログなどはこちら</p>
+            <input type="button" value="クリック" id="btn-blog"/>
+        </div>
+    </div>
+
+    <!-- Go Top 画像の配置 -->
+    <div style="text-align: center; margin-top: 40px;">
+        <p style="font-size: 0.85rem; color: #8b949e; margin-bottom: 5px;">クリックすると一番上に戻るよ！</p>
+        <img src="top.png" alt="Go Top" id="goTopBtn" class="go-top-img">
+    </div>
+
+    <p style="margin-top: 50px; font-size: 0.9rem; color: #8b949e; text-align: center;">Powered by GitHub Pages</p>
+
+    <!-- JavaScriptファイルを読み込む -->
+    <script src="script.js"></script>
 </body>
 </html>
