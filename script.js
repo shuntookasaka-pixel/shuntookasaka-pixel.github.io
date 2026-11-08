@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 作ったものボタンの処理
+    // 【トップページ用】作ったものボタンの処理
     const btnProjects = document.getElementById("btn-projects");
     if (btnProjects) {
         btnProjects.addEventListener("click", () => {
-            // ここにジャンプさせたいサイトのURLを書く（例としてScratchの本垢）
-            window.open("https://mit.edu", "_blank");
+            // 新しいタブではなく、同じ画面で「tukuttamono.html」に移動する
+            window.location.href = "tukuttamono.html"; 
         });
     }
 
-    // ブログボタンの処理
+    // 【トップページ用】ブログボタンの処理
     const btnBlog = document.getElementById("btn-blog");
     if (btnBlog) {
         btnBlog.addEventListener("click", () => {
@@ -17,7 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Go Topボタンの処理
+    // ⬇️【新しく追加】作ったものページから「戻る」ボタンの処理
+    const btnTukuttamonoReturn = document.getElementById("btn-tukuttamono-return");
+    if (btnTukuttamonoReturn) {
+        btnTukuttamonoReturn.addEventListener("click", () => {
+            // トップページ（index.html）に戻る
+            window.location.href = "index.html";
+        });
+    }
+
+    // 【トップページ用】Go Topボタンの処理
     const goTopBtn = document.getElementById("goTopBtn");
     if (goTopBtn) {
         goTopBtn.addEventListener("click", () => {
