@@ -66,3 +66,15 @@ input[type="button"]:hover {
 .go-top-img:hover {
     transform: scale(1.05);
 }
+
+/* 作ったものページの「まだ何もありません」の文字デザイン */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* 戻るボタンを少し離して配置する場合の調整 */
+#btn-tukuttamono-return {
+    margin-top: 10px;
+}
+
