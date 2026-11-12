@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const btnBlog = document.getElementById("btn-blog");
     if (btnBlog) {
         btnBlog.addEventListener("click", () => {
-            alert("ブログは現在準備中です！お楽しみに！");
+            window.location.href = "blog.html"; 
         });
     }
 
